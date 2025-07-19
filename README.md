@@ -56,47 +56,7 @@ byte getBinaryForNumber(int num) {
   }
 }
 ```
-</br>
-A- This function takes a number from 0 to 9 and returns the corresponding binary value for displaying it on a 7-segment display.</br>
-B- Each bit in the returned byte represents the on/off state of a segment in the display.</br>
-C- Note: The binary values may vary depending on the type and configuration of the 7-segment display.</br>
-</br>
-*** Hint -2:</br>
-```C++ 
-tm.displaySetBrightness(PULSE14_16);
-```
-</br>
-A- Set the brightness of the 7-segment display to a high level (approximately 90–100%)</br>
-</br>
-*** Hint -3:</br>
-```C++
-  int temperature = round(temp)
-```
-</br>
-A- Round the temperature value to the nearest whole number and store it in 'temperature'.</br>
-</br>
-*** Hint -4:</br>
-```C++ 
-int yekan = temperature % 10;
-``` </br>
-A- Extract the ones (unit) digit of the temperature. </br>
-```C++ 
-int dahgan = temperature / 10;
-```
-</br>
-B- Extract the tens digit of the temperature.</br>
-</br>
-*** Hint -5: </br>
-```C++
-tm.displayDig(7, getBinaryForNumber(dahgan));
-```
-</br>
-A- Display the tens digit on the leftmost 7-segment (position 7)</br>
-```C++ 
-tm.displayDig(6, getBinaryForNumber(yekan));
-```
-</br>
-B-  Display the ones digit on the segment next to it (position 6)</br>
+
 
 
 
