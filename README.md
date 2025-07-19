@@ -5,6 +5,7 @@
 #First-repository
 #first edit
 # blink by while
+```C++
 const int ledPin = LED_BUILTIN;
 int ledState = LOW;
 int a = 5;
@@ -23,6 +24,7 @@ void loop() {
   delay(1000);
 }
 }
+```
 
 
 
