@@ -37,6 +37,7 @@ and sent to the ESP8266. Then, by connecting this component and the TM1638, the 
 </br>
 </br>
 # Hints :</br>
+Hint 1-:
 ```C++
 byte getBinaryForNumber(int num) {
    switch (num) {
