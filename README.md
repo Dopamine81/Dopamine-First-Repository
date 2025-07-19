@@ -36,7 +36,7 @@ and sent to the ESP8266. Then, by connecting this component and the TM1638, the 
 << https://github.com/Sobhanht/Brightness_Temp/blob/main/README.md >>
 </br>
 </br>
-# Hints :
+# Hints :</br>
 ```C++
 byte getBinaryForNumber(int num) {
    switch (num) {
